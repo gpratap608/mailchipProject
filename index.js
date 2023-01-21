@@ -1,13 +1,13 @@
-const express = require("express");
+import express from "express";
 
 const app = express();
 
-const bodyParser = require("body-parser");
+import bodyParser from "body-parser";
 
-const request = require("request");
+import request from "request";
 
-const https = require("https");
-const { post } = require("request");
+import https from "https";
+
 
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(express.static("public"));
